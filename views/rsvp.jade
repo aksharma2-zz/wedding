@@ -1,0 +1,148 @@
+doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7  
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8  
+//if IE 8
+  html.no-js.lt-ie9  
+// [if gt IE 8] <!
+html.no-js
+  // <![endif]
+
+  head
+   
+    link(href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Sacramento', rel='stylesheet')
+    
+    // Animate.css
+    link(rel='stylesheet', href='/css/animate.css')
+    
+    link(rel='stylesheet', href='/css/bootstrap.css')
+  
+    link(rel='stylesheet', href='/css/magnific-popup.css')
+  
+    link(rel='stylesheet', href='/css/owl.carousel.min.css')
+
+    link(rel='stylesheet', href='/css/owl.theme.default.min.css')
+    
+    link(rel='stylesheet', href='/css/style.css')
+    
+    // FOR IE9 below
+      script(src='/js/respond.min.js')
+      script(src='/js/simplyCountdown.js')
+  body
+   ul.errors
+        if errors
+            each error, i in errors
+                div.alert.alert-danger #{error.msg}
+
+   
+      if success
+          div.alert.alert-success #{success}
+    
+    #page
+      nav.fh5co-nav(role='navigation')
+        .container
+          .row
+            .col-xs-2
+              #fh5co-logo
+                a(href='index.html')
+                  | Wedding
+                  strong .
+            .col-xs-10.text-right.menu-1
+              ul
+                li
+                  a(href='/index') Home
+                li
+                  a(href='/users/rsvp') RSVP
+
+      header#fh5co-header.fh5co-cover(role='banner', style='background-image:url(images/img_bg_2.jpg);', data-stellar-background-ratio='0.5')
+        .overlay
+          .container
+            .row
+              .col-md-8.col-md-offset-2.text-center
+               .display-t
+                .display-tc.animate-box(data-animate-effect='fadeIn')
+                  h1 Kartikay & Aarushi
+                  h2 We Are Getting Married
+                  .simply-countdown.simply-countdown-one
+                   
+
+
+                
+      header#fh5co-header.fh5co-cover.fh5co-cover-sm(role='banner')
+        .overlay
+      
+      .fh5co-section
+        .container
+          .row
+            .col-md-6.col-md-push-6.animate-box
+              h3 Get In Touch
+              form(method='POST' action='#')
+                .row.form-group
+                  .col-md-6
+                    label(for='fname') First Name
+                    input#fname.form-control(type='text', placeholder='Your firstname', name='fname')
+                  .col-md-6
+                    label(for='lname') Last Name
+                    input#lname.form-control(type='text', placeholder='Your lastname', name='lname')
+                .row.form-group
+                  .col-md-12
+                    label(for='email') Email
+                    input#email.form-control(type='text', placeholder='Your email address', name='email')
+                .row.form-group
+                .row.form-group
+                  .col-md-12
+                    label(for='message') Message
+                    textarea#message.form-control(cols='30', rows='10', placeholder='Write us something', name='msg')
+                .form-group
+                  input.btn.btn-primary(type='submit', value='Send Message')
+            .col-md-5.col-md-pull-5.animate-box
+              .fh5co-contact-info
+                h3 Contact Information
+                ul
+                  li.address
+                    | Kalpana Sharma 
+                    
+                  li.phone
+                    a(href='tel://+919910097999') + 91 9910097999
+                  li.email
+                    a(href='mailto:drkalpanasharma@gmail.com') drkalpanasharma@gmail.com
+              
+      #map.fh5co-map
+      // END map
+      footer#fh5co-footer(role='contentinfo')
+        .container
+          .row.copyright
+            .col-md-12.text-center
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d66688.38669729832!2d77.16302905044817!3d28.543429128782975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1daf885ea341%3A0x7d8bdb6b1922f23a!2sVasant+Vihar%2C+New+Delhi%2C+Delhi%2C+India!5e0!3m2!1sen!2s!4v1482330420628" width="1200" height="1000" frameborder="0" style="border:0" allowfullscreen></iframe>
+              p
+                small.block © 2016 Free HTML5. All Rights Reserved.
+                small.block
+                  
+              
+      a.js-gotop(href='#')
+        i.icon-arrow-up
+    script(src='/js/simplyCountdown.js')
+    // jQuery
+    script(src='/js/jquery.min.js')
+    // jQuery Easing
+    script(src='/js/jquery.easing.1.3.js')
+    // Bootstrap
+    script(src='/js/bootstrap.min.js')
+    // Waypoints
+    script(src='/js/jquery.waypoints.min.js')
+    // Carousel
+    script(src='/js/owl.carousel.min.js')
+    // countTo
+    script(src='/js/jquery.countTo.js')
+    // Stellar
+    script(src='/js/jquery.stellar.min.js')
+    // Magnific Popup
+    script(src='/js/jquery.magnific-popup.min.js')
+    script(src='/js/magnific-popup-options.js')
+    // Google Map
+    
+    script(src='/js/google_map.js')
+    // Main
+    script(src='/js/main.js')
